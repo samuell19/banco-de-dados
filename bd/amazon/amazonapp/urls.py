@@ -14,6 +14,5 @@ router.register(r'pedido', views.PedidoViewSet)
 router.register(r'item_pedido', views.PedidoItemViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('amazon_api/', include(router.urls)),
 ]
